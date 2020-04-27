@@ -1,0 +1,39 @@
+/* general rules */
+
+* { box-sizing: border-box; }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    background: #000; 
+    color: #ddd;
+}
+
+.headers {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.name, .text, .colophon, li{
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/* header */
+
+h1 {
+    text-align: center;
+    /* font-size:  */
+}
+
+.name, .header-text {
+    text-align: center;
+}
+
