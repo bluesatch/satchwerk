@@ -10,6 +10,24 @@
     <title>Satchwerk dot com</title>
 </head>
 <body>
+    <!-- nav -->
+    <nav>
+        <div class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="menu">
+                            <li><a href="#bio">about</a></li>
+                            <li><a href="#portfolio">portfolio</a></li>
+                            <li><a href="#contacts">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
     <!-- header -->
     <header>
         <div class="headerbackground">
@@ -25,32 +43,18 @@
         </div>
     </header>
     <!-- header end -->
-    <!-- nav -->
-    <nav>
-        <div class="navbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="menu">
-                            <li>about</li>
-                            <li>projects</li>
-                            <li>contact</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- nav end -->
+   
     <!-- main -->
-    <main>
+    <main class="maincontent">
         <!-- bio -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="bio-section">
-                        <h2 class="headers">bio</h2>
+                        <h2 id="bio" class="headers">bio</h2>
                         <p class="text bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, ad, suscipit fugit laudantium eum impedit veritatis saepe assumenda dignissimos, non esse. Impedit id ipsum reiciendis commodi nostrum adipisci consectetur sint?</p>
+                        <img src="media/satchwerkheadshot.jpg" alt="placeholder img" class="img-responsive bio-img">
+                        
                     </div>
                 </div>
             </div>
@@ -59,29 +63,41 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="portfolio-section">
-                        <h2 class="headers">portfolio</h2>
+                        <h2 id="portfolio" class="headers">portfolio</h2>
                         <p class="text">Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive">
+                    <figure id="fig1" class="projects">
+                        <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive">
+                        <figcaption>Lorem, ipsum.</figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive">
+                    <figure id="fig2" class="projects">
+                        <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive">
+                        <figcaption>Lorem, ipsum.</figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive hidden-xs">
+                    <figure id="fig3" class="projects hidden-xs" >
+                        <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive">
+                        <figcaption>Lorem, ipsum.</figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive hidden-xs">
+                    <figure id="fig4" class="projects hidden-xs">
+                        <img src="https://via.placeholder.com/200x150" alt="placeholder img" class="img-responsive">
+                        <figcaption>Lorem, ipsum.</figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="row">
@@ -130,7 +146,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="contact-secion">
-                            <h2 class="headers">contact me</h2>
+                            <h2 id="contacts" class="headers">contact me</h2>
                             <ul class="contacts">
                                 <li><!-- email goes here-->email</li>
                                 <li><!-- social media here-->twitter</li>
@@ -140,7 +156,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <p class="colophon">built by Satch &copy;2020</p>
+                        <p class="colophon">built by Satchwerk&copy;2020</p>
                     </div>
                 </div>
             </div>

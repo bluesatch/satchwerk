@@ -7,8 +7,8 @@ html {
 }
 
 body { 
-    background: #000; 
-    color: #ddd;
+    background: linear-gradient(#02010a, #5c5c5c) ; 
+    color: whitesmoke;
 }
 
 .headers {
@@ -26,7 +26,32 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
 /* header */
+
+.headerbackground {
+    width: 100%;
+    /* for larger devices; background: url(../media/honeydonoir.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+
+    /* from stackoverflow; use for larger devices*/
+    /* background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center; */
+}
 
 h1 {
     text-align: center;
@@ -37,3 +62,57 @@ h1 {
     text-align: center;
 }
 
+/* nav */
+
+.navbar {
+    margin: 0;
+    height: auto;
+}
+
+.menu {
+    padding-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.navbar li {
+    margin-right: 25px;
+    display: inline;
+}
+
+/* main */
+
+.maincontent {
+    margin-top: 30px;
+}
+.bio-img {
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 3px 1px 1px black;
+}
+
+.projects {
+    padding: 10px 10px;
+}
+
+.projects img {
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 3px 1px 1px black;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.portfolio-link {
+    text-align: center;
+}
+
+
+
+/* footer */
+
+.colophon {
+    text-align: center;
+}
