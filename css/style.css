@@ -7,7 +7,7 @@ html {
 }
 
 body { 
-    background: linear-gradient(#02010a, #5c5c5c) ; 
+    background: linear-gradient(#000000, #2e2e2e) ; 
     color: whitesmoke;
 }
 
@@ -53,6 +53,29 @@ a:hover {
     background-position:center; */
 }
 
+@media (min-width: 768px) {
+    .headerbackground {
+        height: 20em;
+        background: url(../media/headerbkgd2.jpeg);
+        background-repeat:no-repeat;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+        background-position: center;
+        opacity: .50;
+    }
+
+    .header-content {
+        position: relative;
+        top: 12em;
+    }
+
+    h1 {
+        -webkit-text-stroke: 1px black;
+    }
+}
+
 h1 {
     text-align: center;
     /* font-size:  */
@@ -91,6 +114,16 @@ h1 {
     box-shadow: 3px 1px 1px black;
 }
 
+@media (max-width: 767px) {
+    .banner {
+        margin-top: 20px;
+        width: 100%;
+        border-top: 1px solid whitesmoke; 
+        border-bottom: 1px solid whitesmoke; 
+    }
+}
+
+
 .projects {
     padding: 10px 10px;
 }
@@ -112,6 +145,15 @@ figcaption {
 
 
 /* footer */
+
+.contacts {
+    text-align: center; 
+}
+
+.contacts li {
+    display: inline;
+    margin-right: 10px;
+}
 
 .colophon {
     text-align: center;
