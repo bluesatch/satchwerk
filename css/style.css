@@ -1,174 +1,97 @@
-/* general rules */
+:root {
+    --yellow: #f6bb00;
+    --green: #1eb742;
+    --red: #ff3334;
+    --blue: #0c96e4;
+}
 
-* { box-sizing: border-box; }
-
-html {
+* {
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body { 
-    background: linear-gradient(#000000, #2e2e2e) ; 
-    color: whitesmoke;
-}
-
-.headers {
-    font-family: 'Montserrat', sans-serif;
-    font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)));
-    text-transform: capitalize;
-    text-align: center;
-}
-
-
-.name, .text, .colophon, li{
-    font-family: 'Roboto Mono', monospace;
-    font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (1600 - 300)));
-}
-
-ul {
-    padding-left: 0;
-    list-style-type: none;
+body {
+    margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: whitesmoke;
+    color: var(--red);
+    transition: color 0.5s ease;
 }
 
 a:hover {
-    color: dodgerblue;
+    text-decoration: none;
+    color: var(--green);
+}
+.header-container {
+    padding: 30px 0;
+    border-bottom: 3px solid var(--yellow);
 }
 
-/* header */
-
-.headerbackground {
-    width: 100%;
-    /* for larger devices; background: url(../media/honeydonoir.jpg); */
-    /* background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; */
-
-    /* from stackoverflow; use for larger devices*/
-    /* background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center; */
+.topnav-li {
+    font-size: calc(9px + (22 - 9) * ((100vw - 300px) / (1600 - 300)));
+    border-right: 1px solid var(--blue);
 }
 
-@media (min-width: 768px) {
-    .headerbackground {
-        height: 20em;
-        background: url(../media/headerbkgd2.jpeg);
-        background-repeat:no-repeat;
-        -webkit-background-size:cover;
-        -moz-background-size:cover;
-        -o-background-size:cover;
-        background-size:cover;
-        background-position: center;
-        opacity: .50;
-    }
-
-    .header-content {
-        position: relative;
-        top: 12em;
-    }
-
-    h1 {
-        -webkit-text-stroke: 1px black;
-        font-size: calc(26px + (56 - 26) * ((100vw - 300px) / (1600 - 300)));
-    }
+.topnav-li:last-child {
+    border: none;
 }
 
-h1 {
-    text-align: center;
-    font-size: calc(26px + (56 - 26) * ((100vw - 300px) / (1600 - 300)));
+.section {
+    padding: 30px 0;
 }
 
-.name, .header-text {
-    text-align: center;
+.banner {
+    height: 450px;
+    background: var(--yellow);
+    background: url(../media/satch1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* nav */
-
-nav {
-    border-top: 2px solid whitesmoke;
+.banner-text {
+    color: var(--yellow);
 }
 
-.navbar {
-    margin: 0;
-    height: auto;
+h2 {
+    color: var(--green);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--blue);
 }
 
-.menu {
-    padding-top: 20px;
-    margin-bottom: 0;
-    text-align: center;
+h3 {
+    color: var(--red);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--blue);
 }
 
-.navbar li {
-    margin-right: 25px;
-    display: inline;
+button {
+    text-transform: capitalize;
 }
 
-/* main */
-
-.maincontent {
-    margin-top: 30px;
-}
 .bio-img {
-    margin: 20px auto;
     border-radius: 5px;
-    box-shadow: 3px 1px 1px black;
+    box-shadow: 2px 2px 2px var(--blue);
 }
 
-@media (max-width: 767px) {
-    .banner {
-        margin-top: 20px;
-        width: 100%;
-        border-top: 1px solid whitesmoke; 
-        border-bottom: 1px solid whitesmoke; 
-    }
-}
-
-
-.projects {
-    padding: 10px 10px;
-}
-
-.projects img {
-    margin: 0 auto;
-    border-radius: 5px;
-    box-shadow: 3px 1px 1px black;
-}
-
-figcaption {
-    text-align: center;
-}
-
-.portfolio-link {
-    text-align: center;
-}
-
-
-
-/* footer */
-
-.contact-section {
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.contacts {
-    text-align: center; 
-}
-
-.contacts li {
-    display: inline;
-    margin-right: 10px;
+.footer {
+    padding: 30px 0;
+    border-top: 3px solid var(--yellow);
 }
 
 .colophon {
     text-align: center;
-    padding-bottom: 20px;
+}
+
+.top-link {
+    text-align: center;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.email {
+    text-align: center;
 }
