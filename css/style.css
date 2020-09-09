@@ -3,6 +3,10 @@
     --green: #1eb742;
     --red: #ff3334;
     --blue: #0c96e4;
+    --body: #fbfbfb;
+    --fluid-text: calc(9px + (22 - 9) * ((100vw - 300px) / (1600 - 300)));
+    --openSans: 'Open Sans', sans-serif;
+    --ultra: 'Ultra', serif;
 }
 
 * {
@@ -12,6 +16,8 @@
 
 body {
     margin: 0;
+    background: var(--body);
+    font-family: var(--openSans);
 }
 
 a {
@@ -28,8 +34,19 @@ a:hover {
     border-bottom: 3px solid var(--yellow);
 }
 
+@media (max-width: 539px) {
+    .logo img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .topnav {
+        text-align: center;
+    }
+}
+
 .topnav-li {
-    font-size: calc(9px + (22 - 9) * ((100vw - 300px) / (1600 - 300)));
+    font-size: var(--fluid-text);
     border-right: 1px solid var(--blue);
 }
 
@@ -39,31 +56,39 @@ a:hover {
 
 .section {
     padding: 30px 0;
+    width: 100%;
 }
 
 .banner {
     height: 450px;
     background: var(--yellow);
-    background: url(../media/satch1.jpeg);
+    background: url(../media/satch3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
 }
+
+@media (min-width: 1024px) {
+    .banner {
+        background-position: top 10% left 50%;
+    }
+}
+
 
 .banner-text {
     color: var(--yellow);
 }
 
-h2 {
-    color: var(--green);
+.main h2 {
+    padding: 25px 0;
+    font-family: var(--ultra);
+    color: var(--blue);
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px var(--blue);
+    text-shadow: 1px 1px 1px var(--yellow);
 }
 
 h3 {
-    color: var(--red);
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px var(--blue);
 }
 
 button {
@@ -82,16 +107,25 @@ button {
 
 .colophon {
     text-align: center;
+    font-size: var(--fluid-text);
 }
 
 .top-link {
     text-align: center;
 }
 
-.contact h2 {
+.contact p {
     text-align: center;
 }
 
 .email {
     text-align: center;
+}
+
+.work-card {
+    margin: 25px 0;
+}
+
+.work-card:hover, .blog-card:hover {
+    transform: scale(1.05)
 }
