@@ -11,182 +11,194 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a6ddc4e9e0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Satchwerk dot com</title>
+    <title>satchwerk dot com</title>
 </head>
 <body>
-    <header id="top" class="header-container container-fluid">
-        <div class="row">
-            <div class=" col-sm-4 logo">
-                    <!-- logo -->
-                    <img src="https://via.placeholder.com/150x50" alt="placeholder img" class="img-fluid">
-                    <h1 class="sr-only">satchwerk</h1>
+    <header id="top" class="header-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-sm-3 logo">
+                        <!-- logo -->
+                    <a href="index.html" class="home-link">
+                        <h1 class="home-logo">
+                            <img src="https://via.placeholder.com/150x50" alt="placeholder img" class="img-fluid">
+                            <span class="sr-only">satchwerk</span>
+                        </h1>
+                    </a>
+                </div>
+                <nav class="col-sm-9">
+                    <ul class="nav topnav">
+                        <li class="nav-item topnav-li">
+                            <a href="#blog" class="nav-link">blog</a>
+                        </li>
+                        <li class="nav-item topnav-li">
+                            <a href="#about" class="nav-link">about</a>
+                        </li>
+                        <li class="nav-item topnav-li">
+                            <a href="#work" class="nav-link">stuff i've done</a>
+                        </li>
+                        <li class="nav-item topnav-li">
+                            <a href="#contact" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="col-sm-8">
-                <ul class="nav justify-content-start topnav">
-                    <li class="nav-item topnav-li">
-                        <a href="#blog" class="nav-link">blog</a>
-                    </li>
-                    <li class="nav-item topnav-li">
-                        <a href="#about" class="nav-link">about</a>
-                    </li>
-                    <li class="nav-item topnav-li">
-                        <a href="#work" class="nav-link">stuff i've done</a>
-                    </li>
-                    <li class="nav-item topnav-li">
-                        <a href="#contact" class="nav-link">contact</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
+        
     </header>
     <main class="main">
     <!-- banner -->
         <section class="jumbotron jumbotron-fluid banner">
-            <div class="container">
+            <div class="container-fluid">
                 <p class="lead banner-text">husband. father. do-er of stuff. light being.</p>
             </div>
         </section>
-        <section id="blog" class=" section container blog">
-            <h2 class="blog-title">Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sit voluptate aliquid culpa consectetur quasi, quaerat repudiandae laboriosam neque aspernatur eos ex numquam, tenetur modi eius earum dolorum, ipsa pariatur voluptates molestiae anteimi. Impedit, nisi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi repellat accusamus mollitia commodi deleniti amet consequuntur dolores ab blanditiis fuga.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ipsa assumenda. Nesciunt magni pariatur quae quidem minus fugit esse tenetur quisquam obcaecati facilis, quaerat est libero cumque veritatis voluptatibus nam.</p>
-            <!-- past blog posts -->
-            <h2 class="past-blogs-title">past blogs</h2>
-            <div class="card-deck">
-                <div class="card blog-card border-primary">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">blog title</h3>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
-                        <footer class="card-footer"> 
-                            <p class="card-text text-muted">Last modified 1 week ago</p>
-                            <button class="btn btn-outline-primary">read more</button>
-                        </footer> 
+        <section id="blog" class=" section blog">
+            <div class="container">
+                <h2 class="blog-title">Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sit voluptate aliquid culpa consectetur quasi, quaerat repudiandae laboriosam neque aspernatur eos ex numquam, tenetur modi eius earum dolorum, ipsa pariatur voluptates molestiae anteimi. Impedit, nisi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi repellat accusamus mollitia commodi deleniti amet consequuntur dolores ab blanditiis fuga.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ipsa assumenda. Nesciunt magni pariatur quae quidem minus fugit esse tenetur quisquam obcaecati facilis, quaerat est libero cumque veritatis voluptatibus nam.</p>
+                <!-- past blog posts -->
+                <h2 class="past-blogs-title">past blogs</h2>
+                <div class="card-deck">
+                    <div class="card blog-card border-primary">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">blog title</h3>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
+                            <footer class="card-footer"> 
+                                <p class="card-text text-muted">Last modified 1 week ago</p>
+                                <button class="btn btn-outline-primary">read more</button>
+                            </footer> 
+                        </div>
                     </div>
-                </div>
-                <div class="card blog-card border-primary">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">blog title</h3>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
-                        <footer class="card-footer"> 
-                            <p class="card-text text-muted">Last modified 1 week ago</p>
-                            <button class="btn btn-outline-primary">read more</button>
-                        </footer> 
+                    <div class="card blog-card border-primary">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">blog title</h3>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
+                            <footer class="card-footer"> 
+                                <p class="card-text text-muted">Last modified 1 week ago</p>
+                                <button class="btn btn-outline-primary">read more</button>
+                            </footer> 
+                        </div>
                     </div>
-                </div>
-                <div class="card blog-card border-primary">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">blog title</h3>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
-                        <footer class="card-footer"> 
-                            <p class="card-text text-muted">Last modified 1 week ago</p>
-                            <button class="btn btn-outline-primary">read more</button>
-                        </footer> 
+                    <div class="card blog-card border-primary">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">blog title</h3>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
+                            <footer class="card-footer"> 
+                                <p class="card-text text-muted">Last modified 1 week ago</p>
+                                <button class="btn btn-outline-primary">read more</button>
+                            </footer> 
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="section container about">
-            <h2>bio</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="media/satchwerkheadshot.jpg" alt="placeholder img" class="img-fluid bio-img">
-                </div>
-                <div class="col-md-6">
-                    <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium at itaque, nesciunt assumenda voluptates voluptas numquam officia?</p>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>bio</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="media/satchwerkheadshot.jpg" alt="placeholder img" class="img-fluid bio-img">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium at itaque, nesciunt assumenda voluptates voluptas numquam officia?</p>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="work" class="section container work">
-            <div class="card-columns">
-                <div class="card work-card border-primary">
-                    <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">project title</h3>
-                            <h4 class="card-subtitle text-muted">subtitle</h4>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                        <footer class="card-footer">
-                            <button class="btn btn-outline-primary">view</button>
-                        </footer>
+        <section id="work" class="section work">
+            <div class="container">
+                <div class="card-columns">
+                    <div class="card work-card border-primary">
+                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">project title</h3>
+                                <h4 class="card-subtitle text-muted">subtitle</h4>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
+                            <footer class="card-footer">
+                                <button class="btn btn-outline-primary">view</button>
+                            </footer>
+                        </div>
                     </div>
-                </div>
-                <div class="card work-card border-primary">
-                    <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">project title</h3>
-                            <h4 class="card-subtitle text-muted">subtitle</h4>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                        <footer class="card-footer">
-                            <button class="btn btn-outline-primary">view</button>
-                        </footer>
+                    <div class="card work-card border-primary">
+                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">project title</h3>
+                                <h4 class="card-subtitle text-muted">subtitle</h4>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
+                            <footer class="card-footer">
+                                <button class="btn btn-outline-primary">view</button>
+                            </footer>
+                        </div>
                     </div>
-                </div>
-                <div class="card work-card border-primary">
-                    <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">project title</h3>
-                            <h4 class="card-subtitle text-muted">subtitle</h4>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                        <footer class="card-footer">
-                            <button class="btn btn-outline-primary">view</button>
-                        </footer>
+                    <div class="card work-card border-primary">
+                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">project title</h3>
+                                <h4 class="card-subtitle text-muted">subtitle</h4>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
+                            <footer class="card-footer">
+                                <button class="btn btn-outline-primary">view</button>
+                            </footer>
+                        </div>
                     </div>
-                </div>
-                <div class="card work-card border-primary">
-                    <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">project title</h3>
-                            <h4 class="card-subtitle text-muted">subtitle</h4>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                        <footer class="card-footer">
-                            <button class="btn btn-outline-primary">view</button>
-                        </footer>
+                    <div class="card work-card border-primary">
+                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">project title</h3>
+                                <h4 class="card-subtitle text-muted">subtitle</h4>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
+                            <footer class="card-footer">
+                                <button class="btn btn-outline-primary">view</button>
+                            </footer>
+                        </div>
                     </div>
-                </div>
-                <div class="card work-card border-primary">
-                    <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                    <div class="card-body">
-                        <header class="card-header">
-                            <h3 class="card-title">project title</h3>
-                            <h4 class="card-subtitle text-muted">subtitle</h4>
-                        </header>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                        <footer class="card-footer">
-                            <button class="btn btn-outline-primary">view</button>
-                        </footer>
+                    <div class="card work-card border-primary">
+                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">project title</h3>
+                                <h4 class="card-subtitle text-muted">subtitle</h4>
+                            </header>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
+                            <footer class="card-footer">
+                                <button class="btn btn-outline-primary">view</button>
+                            </footer>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div id="contact" class="contact">
                         <p>email me!</p>
                         <p class="email">
@@ -195,43 +207,41 @@
                         
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <p class="colophon">site by satchwerk&copy;2020</p>
-                    <p class="top-link"><a href="#top">back to top</a></p>
-                </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="social">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col">
                                 <a href="https://twitter.com/satchwerk" target="_blank">
                                     <i class="fab fa-twitter"></i>
                                     <span class="sr-only">twitter</span>
                                 </a>
                             </div>
-                            <div class="col-3">
+                            <div class="col">
                                 <a href="https://codepen.io/bluesatch" target="_blank">
                                     <i class="fab fa-codepen"></i>
                                     <span class="sr-only">codepen</span>
                                 </a>
                             </div>
-                            <div class="col-3">
+                            <div class="col">
                                 <a href="https://github.com/bluesatch" target="_blank">
                                     <i class="fab fa-github"></i>
                                     <span class="sr-only">github</span>
                                 </a>
                             </div>
-                            <div class="col-3">
+                            <div class="col">
                                 <a href="https://www.instagram.com/bluesatch/" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                     <span class="sr-only">instagram</span>
                                 </a>
                             </div>
                         </div>
-                        
-                    
                     </div>
                 </div>
-            </div>
+            </div>    
+        </div>
+        <div class="colophon-row container-fluid">
+            <p class="colophon">site by satchwerk&copy;2020</p>
+            <p class="top-link"><a href="#top">back to top</a></p>
         </div>
     </footer>
 

@@ -29,6 +29,7 @@ a:hover {
     text-decoration: none;
     color: var(--green);
 }
+
 .header-container {
     padding: 30px 0;
     border-bottom: 3px solid var(--yellow);
@@ -36,12 +37,20 @@ a:hover {
 
 @media (max-width: 539px) {
     .logo img {
+        padding-left: 0;
         display: block;
         margin: 0 auto;
     }
+}
 
+.topnav {
+    justify-content: flex-end;
+}
+
+@media (max-width: 539px) {
     .topnav {
-        text-align: center;
+        padding-top: 10px; 
+        justify-content: center;
     }
 }
 
@@ -68,11 +77,46 @@ a:hover {
     /* background-position: center; */
 }
 
+.blog-title {
+    font-family: var(--ultra);
+}
+
+.jumbo-blog {
+    height: 400px;
+    background: var(--yellow);
+    background: url(../media/jharth.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.single-blog-img {
+    max-width: 400px;
+    border-radius: 5px; 
+}
+
 @media (min-width: 1024px) {
     .banner {
         background-position: top 10% left 50%;
     }
 }
+
+.main {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.section {
+    padding: 20px 0;
+}
+
+
+.side-nav {
+    padding: 20px 10px;
+}
+/* .clear {
+    clear: both;
+} */
+
 
 
 .banner-text {
@@ -101,16 +145,18 @@ button {
 }
 
 .footer {
-    padding: 30px 0;
+    padding-top: 30px;
     border-top: 3px solid var(--yellow);
 }
 
 .colophon {
     text-align: center;
     font-size: var(--fluid-text);
+    margin-bottom: 1px;
 }
 
 .top-link {
+    margin-bottom: 0;
     text-align: center;
 }
 
@@ -127,5 +173,21 @@ button {
 }
 
 .work-card:hover, .blog-card:hover {
-    transform: scale(1.05)
+    transform: scale(1.01)
+}
+
+i {
+    font-size: 24px;
+}
+
+.social {
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.colophon-row {
+    padding-top: 10px;
+    width: 100%;
+    background: var(--yellow);
 }
