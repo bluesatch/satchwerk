@@ -7,6 +7,7 @@
     --fluid-text: calc(9px + (22 - 9) * ((100vw - 300px) / (1600 - 300)));
     --openSans: 'Open Sans', sans-serif;
     --ultra: 'Ultra', serif;
+    --bodyBg: #eaebee;
 }
 
 * {
@@ -16,7 +17,7 @@
 
 body {
     margin: 0;
-    background: var(--body);
+    background: var(--bodyBg);
     font-family: var(--openSans);
 }
 
@@ -128,7 +129,7 @@ a:hover {
     font-family: var(--ultra);
     color: var(--blue);
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px var(--yellow);
+    text-shadow: 1px 1px 1px #000;
 }
 
 h3 {
@@ -138,6 +139,7 @@ h3 {
 button {
     text-transform: capitalize;
 }
+
 
 .bio-img {
     border-radius: 5px;
@@ -190,4 +192,50 @@ i {
     padding-top: 10px;
     width: 100%;
     background: var(--yellow);
+}
+
+.contact-section {
+    height: calc(100vh - 30px);
+}
+
+.contact-header { 
+    font-family: var(--ultra);
+    color: var(--blue);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.textarea {
+    display: none;
+    width: 100%;
+}
+
+.textarea-btn {
+    color: var(--blue);
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% { 
+        color: var(--blue);
+    }
+
+    25% {
+        color: var(--red);
+    }
+
+    50% {
+        color: var(--green);
+    }
+}
+
+.textarea-block {
+    display: block;
+    width: 100%;
+}
+
+.contact-btn {
+    margin: 0 auto;
 }
