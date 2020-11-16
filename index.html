@@ -4,245 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ultra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
+
     <script src="https://kit.fontawesome.com/a6ddc4e9e0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>satchwerk dot com</title>
 </head>
 <body>
-    <header id="top" class="header-container">
+    <header class="header">
         <div class="container-fluid">
             <div class="row">
-                <div class=" col-sm-3 logo">
-                        <!-- logo -->
-                    <a href="index.html" class="home-link">
-                        <h1 class="home-logo">
-                            <img src="https://via.placeholder.com/150x50" alt="placeholder img" class="img-fluid">
-                            <span class="sr-only">satchwerk</span>
-                        </h1>
-                    </a>
+                <div class="col-md-12 ">
+                    <nav class="topnav d-none d-md-block">
+                        <ul class="nav justify-content-between">
+                            <li class="nav-item"><a href="#link">about</a></li>
+                            <li class="nav-item"><a href="#link">portfolio</a></li>
+                            <li class="nav-item"><a href="#link">services</a></li>
+                            <li class="nav-item"><a href="#link">contact</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="hamburger d-sm-block d-md-none">
+                        <span class="slice"></span>
+                        <span class="slice"></span>
+                        <span class="slice"></span>
+                    </nav>
                 </div>
-                <nav class="col-sm-9">
-                    <ul class="nav topnav">
-                        <li class="nav-item topnav-li">
-                            <a href="#blog" class="nav-link">blog</a>
-                        </li>
-                        <li class="nav-item topnav-li">
-                            <a href="#about" class="nav-link">about</a>
-                        </li>
-                        <li class="nav-item topnav-li">
-                            <a href="#work" class="nav-link">stuff i've done</a>
-                        </li>
-                        <li class="nav-item topnav-li">
-                            <a href="contact.html" class="nav-link">contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="col-md-12">
+                    <h1 class="branding">
+                        <img src="media/WHITE_Satchwerk_FINAL.png" alt="placeholder img" class="img-fluid header-logo">
+                        <span class="sr-only">satchwerk</span>
+                    </h1>
+                    
+                </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="slogan">husband. father. developer. instructor. <span class="outline">doer of stuff.</span></p>
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
-        
     </header>
-    <main class="main">
-    <!-- banner -->
-        <section class="jumbotron jumbotron-fluid banner">
-            <div class="container-fluid">
-                <p class="lead banner-text">husband. father. do-er of stuff. light being.</p>
-            </div>
-        </section>
-        <section id="blog" class=" section blog">
+    <main class="main" id="main">
+        <section class="section section1">
             <div class="container">
-                <h2 class="blog-title">Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sit voluptate aliquid culpa consectetur quasi, quaerat repudiandae laboriosam neque aspernatur eos ex numquam, tenetur modi eius earum dolorum, ipsa pariatur voluptates molestiae anteimi. Impedit, nisi.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi repellat accusamus mollitia commodi deleniti amet consequuntur dolores ab blanditiis fuga.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ipsa assumenda. Nesciunt magni pariatur quae quidem minus fugit esse tenetur quisquam obcaecati facilis, quaerat est libero cumque veritatis voluptatibus nam.</p>
-                <!-- past blog posts -->
-                <h2 class="past-blogs-title">past blogs</h2>
-                <div class="card-deck">
-                    <div class="card blog-card">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">blog title</h3>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
-                            <footer class="card-footer"> 
-                                <p class="card-text text-muted">Last modified 1 week ago</p>
-                                <button class="btn btn-outline-primary">read more</button>
-                            </footer> 
-                        </div>
-                    </div>
-                    <div class="card blog-card">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">blog title</h3>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
-                            <footer class="card-footer"> 
-                                <p class="card-text text-muted">Last modified 1 week ago</p>
-                                <button class="btn btn-outline-primary">read more</button>
-                            </footer> 
-                        </div>
-                    </div>
-                    <div class="card blog-card">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">blog title</h3>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate assumenda quasi error consequatur explicabo asperiores corporis perferendis fugiat maxime consectetur.</p>
-                            <footer class="card-footer"> 
-                                <p class="card-text text-muted">Last modified 1 week ago</p>
-                                <button class="btn btn-outline-primary">read more</button>
-                            </footer> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="section about">
-            <div class="container">
-                <h2>bio</h2>
                 <div class="row">
-                    <div class="col-md-6">
-                        <img src="media/satchwerkheadshot.jpg" alt="placeholder img" class="img-fluid bio-img">
+                    <div class="col-sm-6">
+                        <img src="media/satch2.png" alt="placeholder img" class="img-fluid bio-pic">
                     </div>
-                    <div class="col-md-6">
-                        <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium at itaque, nesciunt assumenda voluptates voluptas numquam officia?</p>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse, omnis perspiciatis minus minima tempora tenetur cumque laboriosam consectetur nobis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, in modi aliquam, enim aut sit magni placeat suscipit assumenda sapiente sed illo eos, maxime voluptate!</p>
+                    <div class="col-sm-6">
+                        <h2 class="bio-header">"Satch"</h2>
+                        <p class="bio-text">
+                            <span class="highlight">Peace Power Blessings</span>. My name is Herbert Brown, but I go by Satch. I spend my work hours teaching others how to fix (and break) things via coding. The Mississippi Coding Academy pays me to do this. When I'm not doing that, I'm probably doing something music related, whether it's DJ'ing, talking about it, or (more conventionally), just listening. Of all the things I do and have done, my greatest passion is being a husband to my wife, Cassandra, and father to my kids, Y'Sonni and Josiah.
+                        </p>
+                        <p class="language-text">
+                            <span class="highlight">What I've learned</span> as an instructor/developer is that I never really "know" languages. I am familiar with them, some more than others, but I am constantly learning each day, and becoming more and more familiar with each block of code I write. Here's a list of the technologies that I have become familiar with over time and continue to learn:
+                        </p>
+                        <ul class="language-list">
+                            <li class="lang-list-item">HTML/CSS</li>
+                            <li class="lang-list-item">JavaScript</li>
+                            <li class="lang-list-item">Python</li>
+                            <li class="lang-list-item">React</li>
+                            <li class="lang-list-item">PHP</li>
+                            <li class="lang-list-item">SQL</li>
+                            <li class="lang-list-item">Bootstrap</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="work" class="section work">
-            <div class="container">
-                <div class="card-columns">
-                    <div class="card work-card">
-                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">project title</h3>
-                                <h4 class="card-subtitle text-muted">subtitle</h4>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                            <footer class="card-footer">
-                                <button class="btn btn-outline-primary">view</button>
-                            </footer>
-                        </div>
+        <section class="section section2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="portfolio-header">stuff I've done</h2>
                     </div>
-                    <div class="card work-card">
-                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">project title</h3>
-                                <h4 class="card-subtitle text-muted">subtitle</h4>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                            <footer class="card-footer">
-                                <button class="btn btn-outline-primary">view</button>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="card work-card">
-                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">project title</h3>
-                                <h4 class="card-subtitle text-muted">subtitle</h4>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                            <footer class="card-footer">
-                                <button class="btn btn-outline-primary">view</button>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="card work-card">
-                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">project title</h3>
-                                <h4 class="card-subtitle text-muted">subtitle</h4>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                            <footer class="card-footer">
-                                <button class="btn btn-outline-primary">view</button>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="card work-card">
-                        <img src="https://via.placeholder.com/250x200" alt="placeholder img" class="cardd-img-top img-fluid">
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">project title</h3>
-                                <h4 class="card-subtitle text-muted">subtitle</h4>
-                            </header>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dicta, dolorem ut recusandae dolore aliquam!</p>
-                            <footer class="card-footer">
-                                <button class="btn btn-outline-primary">view</button>
-                            </footer>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img">
+                                <div class="card-body">
+                                    <h3 class="card-title project-title">Project Title</h3>
+                                    <h4 class="card-text project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque enim inventore minima? Est ullam aut ex, recusandae quis eos!</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img">
+                                <div class="card-body">
+                                    <h3 class="card-title project-title">Project Title</h3>
+                                    <h4 class="card-text project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque enim inventore minima? Est ullam aut ex, recusandae quis eos!</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img">
+                                <div class="card-body">
+                                    <h3 class="card-title project-title">Project Title</h3>
+                                    <h4 class="card-text project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque enim inventore minima? Est ullam aut ex, recusandae quis eos!</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img">
+                                <div class="card-body">
+                                    <h3 class="card-title project-title">Project Title</h3>
+                                    <h4 class="card-text project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque enim inventore minima? Est ullam aut ex, recusandae quis eos!</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img">
+                                <div class="card-body">
+                                    <h3 class="card-title project-title">Project Title</h3>
+                                    <h4 class="card-text project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque enim inventore minima? Est ullam aut ex, recusandae quis eos!</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img">
+                                <div class="card-body">
+                                    <h3 class="card-title project-title">Project Title</h3>
+                                    <h4 class="card-text project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque enim inventore minima? Est ullam aut ex, recusandae quis eos!</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div id="contact" class="contact">
-                        <p>email me!</p>
-                        <p class="email">
-                            <a href="mailto:satchwerk@gmail.com">satchwerk@gmail.com</a>
-                        </p>
-                        
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="social">
-                        <div class="row">
-                            <div class="col">
-                                <a href="https://twitter.com/satchwerk" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                    <span class="sr-only">twitter</span>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://codepen.io/bluesatch" target="_blank">
-                                    <i class="fab fa-codepen"></i>
-                                    <span class="sr-only">codepen</span>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://github.com/bluesatch" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                    <span class="sr-only">github</span>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.instagram.com/bluesatch/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                    <span class="sr-only">instagram</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <div class="colophon-row container-fluid">
-            <p class="colophon">site by satchwerk&copy;2020</p>
-            <p class="top-link"><a href="#top">back to top</a></p>
-        </div>
-    </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
