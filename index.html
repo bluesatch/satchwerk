@@ -11,16 +11,16 @@
     <title>satchwerk dot com</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 ">
                     <nav class="topnav d-none d-md-block">
                         <ul class="nav justify-content-between">
-                            <li class="nav-item"><a href="#link">about</a></li>
-                            <li class="nav-item"><a href="#link">portfolio</a></li>
-                            <li class="nav-item"><a href="#link">blog</a></li>
-                            <li class="nav-item"><a href="#link">contact</a></li>
+                            <li class="nav-item"><a href="#bio">about</a></li>
+                            <li class="nav-item"><a href="#portfolio">portfolio</a></li>
+                            <li class="nav-item"><a href="#blog">blog</a></li>
+                            <li class="nav-item"><a href="#contact">contact</a></li>
                         </ul>
                     </nav>
                     <nav class="hamburger d-sm-block d-md-none">
@@ -46,7 +46,7 @@
         </div>
     </header>
     <main class="main" id="main">
-        <section class="section section1 bio">
+        <section class="section section1 bio" id="bio">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section2 portfolio">
+        <section class="section section2 portfolio" id="portfolio">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -131,7 +131,7 @@
                 </div>
             </div>
         </section> 
-         <section class="section section3 blog">
+         <section class="section section3 blog" id="blog">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -204,7 +204,7 @@
         <!-- /.section3 contact -->
     </main>
     <footer class="footer" id="footer">
-        <section class="section section4 contact">
+        <section class="section section4 contact" id="contact">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4">
@@ -213,7 +213,9 @@
                         
                     </div>
                     <div class="col-md-4">
-                        <img src="media/CMYK_Satchwerk_FINAL.png" alt="logo" class="img-fluid footer-logo">
+                        <a href="#header">
+                            <img src="media/CMYK_Satchwerk_FINAL.png" alt="logo" class="img-fluid footer-logo">
+                        </a>
                         <p class="colophon">site by satchwerk &copy;2020</p>
                     </div>
                     <div class="col-md-4">
