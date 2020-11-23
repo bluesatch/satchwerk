@@ -205,8 +205,26 @@ a:hover {
     text-align: center;
 }
 
+.social {
+    padding: 10px;
+    background: var(--yellow);
+    border-radius: 50%;
+    transition: background 0.5s ease;
+
+}
+
 .social:hover, .email:hover {
     color: var(--yellow);
+}
+
+.social:hover {
+    background: var(--blue);
+}
+
+@media (max-width: 576px) {
+    .email-text {
+        text-align: center;
+    }
 }
 
 .border {
@@ -241,3 +259,35 @@ a:hover {
 .blue-box {
     background: var(--blue);
 }
+
+.about-page-header, .contact-page-header {
+    padding: 50px 0 10px 0;
+    height: auto;
+}
+
+.pic-border {
+    display: flex;
+
+}
+
+.pic-border .box {
+    height: 20px; 
+}
+
+.about-header {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: calc(28px + (48 - 28) * ((100vw - 300px) / (1600 - 300)));
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-text {
+    font-family: var(--generalText);
+    color: #777;
+    font-size: var(--fluid-text);
+    text-align: justify;
+}
+
