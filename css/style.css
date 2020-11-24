@@ -38,6 +38,8 @@ a:hover {
 
 /* mobile */
 
+/* hamburger menu */
+
 
 
 .header {
@@ -79,12 +81,101 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+    }
+    
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
     .slice {
+        position: relative;
         display: block;
         margin-bottom: 3px;
         width: 20px;
-        height: 3px;
+        height: 4px;
         background: white; 
+        z-index: 1;
+        /* transform-origin */
+        transform-origin: 4px 0px;
+        /* sets the origin for transformations */
+        transition: 
+                transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    .slice:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    .slice:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ .slice {
+        opacity: 1;
+        transform: 
+            rotate(45deg) 
+            translate(-2px, -1px); 
+        background: var(--blue);
+    }
+
+    #menuToggle input:checked ~ .slice:nth-last-child(3) {
+        opacity: 0;
+        transform: 
+            rotate(0deg)
+            scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ .slice:nth-last-child(2) {
+        transform: 
+            rotate(-45deg) 
+            translate(0, -1px);
+    }
+
+    .hamburger-list {
+        position: absolute;
+        margin: -100px 0 0 -65px;
+        padding: 40px;
+        padding-top: 80px; 
+        width: 150px;
+        background: #eaebee;
+        list-style-type: none;
+        opacity: 0.95;
+        /* stops flickering of text in safari */
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    .hamburger-item {
+        padding: 5px 0;
+        font-size: 22px;
+    }
+
+    .hamburger-item a {
+        color: var(--blue);
+    }
+
+    #menuToggle input:checked ~ .hamburger-list {
+        transform: none;
     }
 
     .slogan {

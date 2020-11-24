@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 ">
-                    <nav class="topnav d-none d-md-block">
+                    <nav class="d-none d-md-block">
                         <ul class="nav justify-content-between">
                             <li class="nav-item"><a href="about.html">about</a></li>
                             <li class="nav-item"><a href="#portfolio">portfolio</a></li>
@@ -23,9 +23,18 @@
                         </ul>
                     </nav>
                     <nav class="hamburger d-sm-block d-md-none">
-                        <span class="slice"></span>
-                        <span class="slice"></span>
-                        <span class="slice"></span>
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <ul class="hamburger-list">
+                                <li class="hamburger-item"><a href="about.html">about</a></li>
+                                <li class="hamburger-item"><a href="#portfolio">portfolio</a></li>
+                                <li class="hamburger-item"><a href="#blog">blog</a></li>
+                                <li class="hamburger-item"><a href="contact.html">contact</a></li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
                 <div class="col-md-12">
