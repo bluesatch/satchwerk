@@ -7,7 +7,7 @@
     --fluid-text: calc(9px + (18 - 9) * ((100vw - 300px) / (1600 - 300)));
     --franklin: 'Franklin Gothic Heavy';
     --generalText: Arial, Helvetica, sans-serif;
-    --bodyBg: #eaebee;
+    --bodyBg: #eaeae3;
 }
 
 /* generic rules */
@@ -21,6 +21,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     background: var(--bodyBg);
     font-family: var(--franklin) ;
 }
@@ -33,6 +34,10 @@ a:hover {
     text-decoration: none;
 }
 
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
 
 /* index header */
 
@@ -43,7 +48,7 @@ a:hover {
 
 
 .header {
-    padding: 50px 0;
+    padding: 30px 0;
     height: 100vh;
     background: var(--blue);
     color: white;
@@ -60,33 +65,41 @@ a:hover {
 
 .branding {
     text-align: center;
+
 }
 
 .header-logo {
-    width: 15%;
+    width: 18%;
     margin: -80px auto 0 auto;
 }
 
 .slogan {
+    margin: 0;
     font-size: calc(32px + (72 - 32) * ((100vw - 300px) / (1600 - 300)));
-    width: 35%;
     color: white;
+}
+
+.slogan-text {
+    display: block;
+    margin: 0;
+    line-height: 1.1;
 }
 
 .outline {
     display: block;
+    margin: 0;
     color: var(--blue);
-    /* text-shadow: 2px 2px 2px white; */
     -webkit-text-stroke: 2px white;
 }
 
+/* for hamburger */
 @media (max-width: 767px) {
 
     #menuToggle {
         display: block;
         position: relative;
         top: 50px;
-        left: 50px;
+        left: 30px;
         z-index: 1;
         -webkit-user-select: none;
     }
@@ -180,7 +193,7 @@ a:hover {
 
     .slogan {
         margin: 0;
-        width: 50%;
+        /* width: 50%; */
     }
 
     .branding {
@@ -197,8 +210,7 @@ a:hover {
 /* sections */
 
 .section {
-    padding: 30px 0;
- 
+    padding: 20px 0;
 }
 
 /* section1 */
@@ -206,12 +218,13 @@ a:hover {
 .bio-header {
     text-align: center;
     padding-top: 30px;
+    /* width: 100%; */
 }
 
 
 .bio-pic {
     /* display: block; */
-    margin-top: -80px;
+    margin-top: -60px;
 }
 
 @media (max-width: 576px) {
@@ -232,11 +245,6 @@ a:hover {
     font-size: var(--fluid-text);
     font-weight: 100;
     text-align: justify;
-}
-
-.language-list {
-    list-style-type: none;
-    padding-left: 0;
 }
 
 .lang-list-item {
@@ -261,6 +269,7 @@ a:hover {
 
 .portfolio-header {
     padding-bottom: 20px;
+    width: 100%;
     font-size: 48px;
     text-align: center;
     text-transform: uppercase;
@@ -351,10 +360,12 @@ a:hover {
     background: var(--blue);
 }
 
-.about-page-header, .contact-page-header {
+.about-page-header, .contact-page-header, .single-blog-header {
     padding: 50px 0 10px 0;
     height: auto;
 }
+
+/* about page */
 
 .pic-border {
     display: flex;
@@ -382,3 +393,32 @@ a:hover {
     text-align: justify;
 }
 
+/* contact page */
+
+.contact-page-header {
+    width: 100%;
+}
+
+.contact-input, .contact-text, .badu {
+    font-family: var(--generalText);
+}
+
+.badu {
+    font-style: italic;
+}
+
+.comments {
+    width: 100%;
+    font-family: var(--generalText);
+}
+
+.contact-button {
+    display: block;
+    float: right;
+}
+
+/* blog */
+
+.blog-link {
+    background: #eaebee;
+}
